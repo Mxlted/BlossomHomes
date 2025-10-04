@@ -191,14 +191,14 @@ public class BlossomHomes implements ModInitializer {
 
             TextUtils.sendWarn(ctx, "blossom.homes.spawn");
             home = new Home(
-                    CONFIG.defaultHome,
-                    teleportTarget.world().getRegistryKey().getValue().toString(),
-                    teleportTarget.position().x,
-                    teleportTarget.position().y,
-                    teleportTarget.position().z,
-                    teleportTarget.pitch(),
-                    teleportTarget.yaw()
-            );
+			CONFIG.defaultHome,
+			teleportTarget.world().getRegistryKey().getValue().toString(),
+			teleportTarget.position().x,
+			teleportTarget.position().y,
+			teleportTarget.position().z,
+			teleportTarget.pitch(),
+			teleportTarget.yaw()
+			);
         }
 
         Home finalHome = home;
